@@ -1,2 +1,61 @@
-<embed src="assets/docs/resume.pdf" type="application/pdf" width="100%" height="600px">
-    <p>Download my <a href="assets/docs/resume.pdf" download>resume (PDF)</a></p>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gus.com - Resume/CV</title> <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+        <style>
+            /* Apply Montserrat font globally */
+            body {
+                font-family: 'Montserrat', sans-serif;
+            }
+            /* Style for embedded PDF */
+            .pdf-embed {
+                width: 100%;
+                height: 80vh; /* Adjust height as needed */
+                border: 1px solid #4a5568; /* Darker border for dark theme (gray-600) */
+                border-radius: 0.375rem; /* rounded-md */
+            }
+        </style>
+    </head>
+<body class="bg-black text-gray-100"> <nav class="bg-gray-900 shadow-md sticky top-0 z-50 border-b border-gray-700"> <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-semibold text-white">Gus Cedergrund</a> <div class="space-x-4">
+                <a href="index.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md hover:bg-gray-700">About Me</a> <a href="resume.html" class="text-white font-semibold px-3 py-2 rounded-md bg-blue-700">Resume/CV</a> <a href="interests.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md hover:bg-gray-700">Interests</a> <a href="projects.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md hover:bg-gray-700">Projects</a> <a href="social.html" class="text-gray-300 hover:text-white px-3 py-2 rounded-md hover:bg-gray-700">Social Media</a> </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-6 py-12">
+        <div class="bg-gray-800 p-8 rounded-lg shadow-lg"> <h1 class="text-3xl font-bold mb-6 text-white">Resume / CV</h1> <p class="mb-6 text-gray-300"> Below you can find my current Resume/CV.
+            </p>
+
+            <div class="mb-8">
+                <iframe
+                    src="assets/docs/Cedergrund_Gustav_Resume.pdf"
+                    class="pdf-embed"
+                    title="Gus' Resume/CV"
+                >
+                    Your browser does not support embedded PDFs. You can <a href="YOUR_PUBLIC_PDF_LINK.pdf" target="_blank" class="text-blue-400 hover:underline">download the PDF directly</a>. </iframe>
+            </div>
+
+            <div class="mb-8">
+                <h2 class="text-2xl font-semibold mb-4 text-white">Download Resume (Google Drive)</h2> <a
+                    href="https://docs.google.com/document/d/1jPEMG9KwQBCS4nFiNeg2Y1jDbDVQNdJsXIMhMEdoGhs/edit?usp=sharing"
+                    target="_blank"
+                    class="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition duration-200"
+                > View/Download Resume from Google Drive
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="bg-gray-900 mt-12 py-6 border-t border-gray-700"> <div class="container mx-auto px-6 text-center text-gray-400">
+            &copy; 2025 Gus Cedergrund. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
